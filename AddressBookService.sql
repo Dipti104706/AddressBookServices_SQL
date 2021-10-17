@@ -51,3 +51,14 @@ Select Count(City) as Size,City,StateName from AddressBookTable group by StateNa
 --------------------UC8--------------
 -------Sort the name alphabetically using city name--------
 select FirstName from AddressBookTable where City='Rourkela' order by FirstName;
+
+---------------------UC9-------------------
+-------Add the new columns and adding the address book name and type-----------
+alter table AddressBookTable add 
+AddressBookName varchar(50),
+Type varchar(50);
+select * from AddressBookTable;
+-----------Update the table----------
+update AddressBookTable set AddressBookName='BestFriend',Type='Friend' where FirstName='Sarika';
+update AddressBookTable set AddressBookName='Sister',Type='Family' where FirstName='Debasmita';
+update AddressBookTable set AddressBookName='Manager',Type='Profession' where FirstName='Suchitra';
