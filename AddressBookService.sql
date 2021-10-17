@@ -67,3 +67,8 @@ update AddressBookTable set AddressBookName='Manager',Type='Profession' where Fi
 ----------------Count person by type-----
 Select count(Type)as Count,Type  from AddressBookTable group by Type;
 
+----------------------UC11---------------
+---------------- Insert same contact as family and friend-----
+insert into AddressBookTable values('Debasmita','Sutar','Jagda','Rourkela','Odisha',769042,258721564,'deba12@gmail.com','closefriend','Friend');
+select * from AddressBookTable;
+
