@@ -39,3 +39,7 @@ select * from AddressBookTable;
 ------Delete a contact using perosn name-----
 delete from AddressBookTable where FirstName='Sujata';
 select * from AddressBookTable;
+
+--------------------------UC6-----------------
+---------------Retrieve data belongs to state or city---------
+Select FirstName from AddressBookTable where City='Bhubaneswar' or StateName='Odisha';
